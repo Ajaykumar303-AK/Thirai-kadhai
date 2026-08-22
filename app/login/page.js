@@ -9,7 +9,6 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false)
   const router = useRouter()
 
-  // Sign Up (புதிய கணக்கு தொடங்க)
   const handleSignUp = async () => {
     setLoading(true)
     const { error } = await supabase.auth.signUp({ email, password })
@@ -18,14 +17,13 @@ export default function LoginPage() {
     setLoading(false)
   }
 
-  // Login (உள்ளே நுழைய)
   const handleLogin = async () => {
     setLoading(true)
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) {
       alert(error.message)
     } else {
-      router.push('/') // லாகின் ஆனதும் மெயின் பக்கத்திற்குச் செல்ல
+      router.push('/')
     }
     setLoading(false)
   }
@@ -64,3 +62,6 @@ export default function LoginPage() {
     </div>
   )
 }
+
+// பிரிடெண்டர் எர்ரரைத் தவிர்க்க இது மிக அவசியம்
+export const dynamic = 'force-dynamic'
