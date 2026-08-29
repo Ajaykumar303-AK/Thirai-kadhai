@@ -69,4 +69,129 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
+  .screenplay-page {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto;
+  padding: 1in 1in 1in 1.5in; /* இடதுபுறம் மட்டும் பைண்டிங்கிற்காக 1.5 இன்ச் இடைவெளி இருக்கும் */
+  background: white;
+  font-family: 'Courier Prime', Courier, monospace; /* திரைக்கதைக்கான அதிகாரப்பூர்வ எழுத்துரு */
+  font-size: 12pt;
+  line-height: 1;
+  box-sizing: border-box;
 }
+
+/* தனித்தனி கூறுகளுக்கான அலைன்மென்ட் */
+.scene-heading {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.action-text {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.character-name {
+  margin-top: 12px;
+  margin-left: 2.2in; /* கதாபாத்திரத்தின் பெயர் நடுவில் வர */
+  text-transform: uppercase;
+}
+
+.dialogue {
+  margin-left: 1in;
+  margin-right: 1.5in;
+  margin-bottom: 12px;
+}
+@media print {
+  body {
+    background: white !important;
+  }
+  .screenplay-sheet {
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    width: 100% !important;
+  }
+}
+
+.screenplay-sheet {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 20px auto;
+  padding: 1in 1in 1in 1.5in; /* இடதுபுறம் பைண்டிங்கிற்காக 1.5 இன்ச் இடைவெளி */
+  background: white;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 12pt;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+/* திரைக்கதை கூறுகளின் அலைன்மென்ட் */
+.script-scene {
+  margin-top: 18px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.script-action {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.script-character {
+  margin-top: 12px;
+  margin-left: 2.2in; /* கதாபாத்திர பெயர் நடுவில் வர */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.script-dialogue {
+  margin-left: 1in;
+  margin-right: 1.5in;
+  margin-bottom: 12px;
+}
+@media print {
+  body {
+    background: white !important;
+  }
+  .screenplay-sheet {
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+}
+
+.screenplay-sheet {
+  width: 8.5in;
+  min-height: 11in;
+  padding: 1in 1in 1in 1.5in; /* இடதுபுறம் பைண்டிங்கிற்காக 1.5 இன்ச் இடைவெளி */
+  background: white;
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: 12pt;
+  box-sizing: border-box;
+}
+
+/* திரைக்கதை கூறுகளின் பிரத்யேக இடது இடைவெளிகள் (Standard Hollywood Margins) */
+.script-scene {
+  text-align: left;
+}
+
+.script-action {
+  text-align: left;
+  margin-left: 0in;
+  margin-right: 0.5in;
+}
+
+.script-character {
+  margin-left: 2.2in; /* கதாபாத்திரத்தின் பெயர் நடுப்பகுதியில் வர */
+}
+
+.script-dialogue {
+  margin-left: 1in;   /* வசனம் இடதுபுறமிருந்து தள்ளி வர */
+  margin-right: 1.5in; /* வலதுபுற விளிம்பு */
+}
+}
+
